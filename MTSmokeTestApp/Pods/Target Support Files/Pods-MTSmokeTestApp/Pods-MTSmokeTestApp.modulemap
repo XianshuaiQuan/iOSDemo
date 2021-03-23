@@ -1,0 +1,6 @@
+framework module Pods_MTSmokeTestApp {
+  umbrella header "Pods-MTSmokeTestApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
