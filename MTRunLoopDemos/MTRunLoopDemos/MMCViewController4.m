@@ -28,7 +28,7 @@
 }
 
 - (void)leftBarButtonEvent {
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:NO];
 }
 
 #pragma mark - lazy

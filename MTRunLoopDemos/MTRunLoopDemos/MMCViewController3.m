@@ -33,11 +33,11 @@
 }
 
 - (void)rightBarButtonEvent {
-   [self.navigationController pushViewController:self.viewController4 animated:YES];
+   [self.navigationController pushViewController:self.viewController4 animated:NO];
 }
 
 - (void)leftBarButtonEvent {
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:NO];
 }
 
 #pragma mark - lazy

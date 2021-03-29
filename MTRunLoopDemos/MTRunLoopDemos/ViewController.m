@@ -46,7 +46,7 @@
 }
 
 - (void)rightBarButtonEvent {
-    [self.navigationController pushViewController:self.viewController2 animated:YES];
+    [self.navigationController pushViewController:self.viewController2 animated:NO];
 }
 
 
