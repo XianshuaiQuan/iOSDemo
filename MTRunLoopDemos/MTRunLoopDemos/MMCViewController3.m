@@ -6,11 +6,8 @@
 //
 
 #import "MMCViewController3.h"
-#import "MMCViewController4.h"
 
 @interface MMCViewController3 ()
-
-@property (nonatomic, strong) MMCViewController4 *viewController4;
 
 @end
 
@@ -26,26 +23,13 @@
 - (void)setNavigationController {
     self.navigationItem.title = @"demo3";
     
-    UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc] initWithTitle:@"下一个" style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonEvent)];
-    self.navigationItem.rightBarButtonItem = rightBarButton;
     UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithTitle:@"上一个" style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonEvent)];
     self.navigationItem.leftBarButtonItem = leftBarButton;
-}
-
-- (void)rightBarButtonEvent {
-   [self.navigationController pushViewController:self.viewController4 animated:NO];
 }
 
 - (void)leftBarButtonEvent {
     [self.navigationController popViewControllerAnimated:NO];
 }
 
-#pragma mark - lazy
-- (MMCViewController4 *)viewController4 {
-    if (!_viewController4) {
-        _viewController4 = [[MMCViewController4 alloc] init];
-    }
-    return _viewController4;
-}
 
 @end

@@ -6,12 +6,9 @@
 //
 
 #import "MMCViewController2.h"
-#import "MMCViewController3.h"
 #import "MMCThread.h"
 
 @interface MMCViewController2 ()<UITableViewDelegate,UITableViewDataSource>
-
-@property (nonatomic, strong) MMCViewController3 *viewController3;
 
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UILabel *timeLabel;
@@ -51,14 +48,8 @@
 - (void)setNavigationController {
     self.navigationItem.title = @"demo2";
     
-    UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc] initWithTitle:@"下一个" style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonEvent)];
-    self.navigationItem.rightBarButtonItem = rightBarButton;
     UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithTitle:@"上一个" style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonEvent)];
     self.navigationItem.leftBarButtonItem = leftBarButton;
-}
-
-- (void)rightBarButtonEvent {
-   [self.navigationController pushViewController:self.viewController3 animated:NO];
 }
 
 - (void)leftBarButtonEvent {
@@ -114,13 +105,6 @@
 }
 
 #pragma mark - lazy
-- (MMCViewController3 *)viewController3 {
-    if (!_viewController3) {
-        _viewController3 = [[MMCViewController3 alloc] init];
-    }
-    return _viewController3;
-}
-
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 100, self.view.frame.size.width - 40, 0)];
@@ -134,7 +118,7 @@
 
 - (UILabel *)timeLabel {
     if (!_timeLabel) {
-        _timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.view.frame.size.width / 2 - 100, CGRectGetMaxY(self.titleLabel.frame) + 50, 200, 100)];
+        _timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.view.frame.size.width / 2 - 100, CGRectGetMaxY(self.titleLabel.frame) + 20, 200, 100)];
         _timeLabel.font = [UIFont systemFontOfSize:30];
     }
     return _timeLabel;

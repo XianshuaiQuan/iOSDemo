@@ -17,8 +17,6 @@
 		3F68E3DE260DF2E2003405BA /* MTRunLoopDemosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F68E3DD260DF2E2003405BA /* MTRunLoopDemosTests.m */; };
 		3F68E3E9260DF2E2003405BA /* MTRunLoopDemosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F68E3E8260DF2E2003405BA /* MTRunLoopDemosUITests.m */; };
 		3F68E404260DF7E2003405BA /* MMCViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F68E403260DF7E2003405BA /* MMCViewController2.m */; };
-		3F68E40A260DFA3E003405BA /* MMCViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F68E409260DFA3E003405BA /* MMCViewController3.m */; };
-		3F68E410260DFA57003405BA /* MMCViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F68E40F260DFA57003405BA /* MMCViewController4.m */; };
 		3F8DFD19260F4F5D0092DCB7 /* MMCThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8DFD18260F4F5D0092DCB7 /* MMCThread.m */; };
 /* End PBXBuildFile section */
 
@@ -60,10 +58,6 @@
 		3F68E3EA260DF2E2003405BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F68E402260DF7E2003405BA /* MMCViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCViewController2.h; sourceTree = "<group>"; };
 		3F68E403260DF7E2003405BA /* MMCViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCViewController2.m; sourceTree = "<group>"; };
-		3F68E408260DFA3E003405BA /* MMCViewController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCViewController3.h; sourceTree = "<group>"; };
-		3F68E409260DFA3E003405BA /* MMCViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCViewController3.m; sourceTree = "<group>"; };
-		3F68E40E260DFA57003405BA /* MMCViewController4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCViewController4.h; sourceTree = "<group>"; };
-		3F68E40F260DFA57003405BA /* MMCViewController4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCViewController4.m; sourceTree = "<group>"; };
 		3F8DFD17260F4F5D0092DCB7 /* MMCThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCThread.h; sourceTree = "<group>"; };
 		3F8DFD18260F4F5D0092DCB7 /* MMCThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCThread.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,10 +166,6 @@
 			children = (
 				3F68E402260DF7E2003405BA /* MMCViewController2.h */,
 				3F68E403260DF7E2003405BA /* MMCViewController2.m */,
-				3F68E408260DFA3E003405BA /* MMCViewController3.h */,
-				3F68E409260DFA3E003405BA /* MMCViewController3.m */,
-				3F68E40E260DFA57003405BA /* MMCViewController4.h */,
-				3F68E40F260DFA57003405BA /* MMCViewController4.m */,
 			);
 			name = MTViewControllers;
 			sourceTree = "<group>";
@@ -320,9 +310,7 @@
 			files = (
 				3F68E3C9260DF2DE003405BA /* ViewController.m in Sources */,
 				3F68E3C3260DF2DE003405BA /* AppDelegate.m in Sources */,
-				3F68E40A260DFA3E003405BA /* MMCViewController3.m in Sources */,
 				3F8DFD19260F4F5D0092DCB7 /* MMCThread.m in Sources */,
-				3F68E410260DFA57003405BA /* MMCViewController4.m in Sources */,
 				3F68E3D4260DF2E2003405BA /* main.m in Sources */,
 				3F68E404260DF7E2003405BA /* MMCViewController2.m in Sources */,
 				3F68E3C6260DF2DE003405BA /* SceneDelegate.m in Sources */,
