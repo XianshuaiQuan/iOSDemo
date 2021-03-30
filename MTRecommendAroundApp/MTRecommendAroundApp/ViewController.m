@@ -10,12 +10,20 @@
 #import "MMCRAAModel.h"
 #import "MMCRAAModelItems.h"
 #import <Mantle/Mantle.h>
+#import "MMCTableViewCell.h"
+#import <Masonry/Masonry.h>
+#import "MMCTableViewHeaderView.h"
 
-@interface ViewController ()
+#define SCREEN_WIDTH self.view.frame.size.width
+#define SCREEN_HEIGHT self.view.frame.size.height
+
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) MMCRAAViewModel *dataRACCommand;
 @property (nonatomic, strong) MMCRAAModel *dataModel;
 @property (nonatomic, strong) MMCRAAModelItems *dataModelItems;
+
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
@@ -27,6 +35,15 @@
     [self setNavigationController];
     [self bindViewModel];
     [self.dataRACCommand.dataRequest execute:nil];
+    
+    [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.view.mas_top).offset(64);
+            make.bottom.mas_equalTo(self.view.mas_bottom);
+            make.left.mas_equalTo(self.view.mas_left);
+            make.right.mas_equalTo(self.view.mas_right);
+    }];
+    
 }
 
 #pragma mark - setNavigationController
@@ -38,9 +55,45 @@
 - (void)bindViewModel {
     [self.dataRACCommand.dataRequest.executionSignals.switchToLatest subscribeNext:^(id x) {
         self.dataModel = x;
-        self.dataModelItems = [MTLJSONAdapter modelOfClass:[MMCRAAModelItems class] fromJSONDictionary:self.dataModel.data[0] error:nil];
-        
+        [self.tableView reloadData];
     }];
+}
+
+#pragma mark - UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.dataModel.data count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *identifier = @"identifier";
+    MMCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (!cell) {
+        cell = [[MMCTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
+    }
+   cell.dataDictionary = self.dataModel.data[indexPath.item];
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return UITableViewAutomaticDimension;
+}
+
+//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+//    return self.dataModel.title;
+//}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    static NSString *headerViewIdentifier = @"headerViewIdentifier";
+    MMCTableViewHeaderView *headView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerViewIdentifier];
+    if (!headView) {
+        headView = [[MMCTableViewHeaderView alloc] initWithReuseIdentifier:headerViewIdentifier];
+    }
+    headView.title = self.dataModel.title;
+    return headView;
 }
 
 #pragma mark - lazy
@@ -63,6 +116,18 @@
         _dataModelItems = [[MMCRAAModelItems alloc] init];
     }
     return _dataModelItems;
+}
+
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64) style:UITableViewStyleGrouped];
+        _tableView.rowHeight = UITableViewAutomaticDimension;
+        _tableView.estimatedRowHeight = 300;
+        
+        _tableView.dataSource = self;
+        _tableView.delegate = self;
+    }
+    return _tableView;
 }
 
 @end
