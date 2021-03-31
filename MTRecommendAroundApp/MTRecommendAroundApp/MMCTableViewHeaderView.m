@@ -40,7 +40,7 @@
     if (!_headerTitle) {
         _headerTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
         _headerTitle.font = [UIFont systemFontOfSize:20];
-//        _headerTitle.backgroundColor = [UIColor systemGray5Color];
+        _headerTitle.backgroundColor = [UIColor whiteColor];
     }
     return _headerTitle;
 }

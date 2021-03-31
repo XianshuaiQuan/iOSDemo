@@ -8,6 +8,7 @@
 #import "MMCTableViewCell.h"
 #import <Masonry/Masonry.h>
 #import <SDWebImage/SDWebImage.h>
+#import "MMCStarView.h"
 
 @interface MMCTableViewCell()
 
@@ -17,6 +18,8 @@
 @property (nonatomic, strong) UILabel *subTitleLabel2;
 @property (nonatomic, strong) UILabel *topRightInfoLabel;
 @property (nonatomic, strong) UILabel *mainMessageLabel;
+
+@property (nonatomic, strong) MMCStarView *starView;
 
 @end
 
@@ -37,6 +40,7 @@
     [self addSubview:self.subTitleLabel2];
     [self addSubview:self.topRightInfoLabel];
     [self addSubview:self.mainMessageLabel];
+    [self addSubview:self.starView];
 }
 
 - (void)setDataDictionary:(NSDictionary *)dataDictionary {
@@ -58,9 +62,16 @@
     }];
     self.titleLabel.text = _dataDictionary[@"title"];
     
+    [self.starView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.titleLabel.mas_bottom).offset(10);
+            make.left.mas_equalTo(self.imageUrlView.mas_right).offset(10);
+            make.height.mas_equalTo(20);
+    }];
+    self.starView.score = [dataDictionary[@"score"] floatValue];
+    
     [self.subTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(self.titleLabel.mas_bottom).offset(10);
-            make.left.mas_equalTo(self.imageUrlView.mas_right).offset(100);
+            make.left.mas_equalTo(self.starView.mas_right).offset(110);
             make.height.mas_equalTo(20);
     }];
     self.subTitleLabel.text = _dataDictionary[@"subTitle"];
@@ -137,5 +148,13 @@
         _mainMessageLabel.font = [UIFont systemFontOfSize:14];
     }
     return _mainMessageLabel;
+}
+
+- (MMCStarView *)starView {
+    if (!_starView) {
+        _starView = [[MMCStarView alloc] initWithFrame:CGRectMake(0, 0, 100, 20)];
+        _starView.backgroundColor = [UIColor greenColor];
+    }
+    return _starView;
 }
 @end

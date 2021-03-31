@@ -21,6 +21,7 @@
 		3F712E1C2613178A00D7360A /* MMCRAAModelItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F712E1B2613178A00D7360A /* MMCRAAModelItems.m */; };
 		3F712E2B2613410600D7360A /* MMCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F712E2A2613410600D7360A /* MMCTableViewCell.m */; };
 		3F712E4526135C5400D7360A /* MMCTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F712E4426135C5400D7360A /* MMCTableViewHeaderView.m */; };
+		3F712E4B261426A600D7360A /* MMCStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F712E4A261426A600D7360A /* MMCStarView.m */; };
 		A5519BE462EBD5C8953A3B5A /* Pods_MTRecommendAroundApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0E5CAE6B77B3550298AB97 /* Pods_MTRecommendAroundApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,8 @@
 		3F712E2A2613410600D7360A /* MMCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCTableViewCell.m; sourceTree = "<group>"; };
 		3F712E4326135C5400D7360A /* MMCTableViewHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCTableViewHeaderView.h; sourceTree = "<group>"; };
 		3F712E4426135C5400D7360A /* MMCTableViewHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCTableViewHeaderView.m; sourceTree = "<group>"; };
+		3F712E49261426A600D7360A /* MMCStarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCStarView.h; sourceTree = "<group>"; };
+		3F712E4A261426A600D7360A /* MMCStarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCStarView.m; sourceTree = "<group>"; };
 		5A0E5CAE6B77B3550298AB97 /* Pods_MTRecommendAroundApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTRecommendAroundApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -205,6 +208,8 @@
 				3F712E2A2613410600D7360A /* MMCTableViewCell.m */,
 				3F712E4326135C5400D7360A /* MMCTableViewHeaderView.h */,
 				3F712E4426135C5400D7360A /* MMCTableViewHeaderView.m */,
+				3F712E49261426A600D7360A /* MMCStarView.h */,
+				3F712E4A261426A600D7360A /* MMCStarView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -402,6 +407,7 @@
 			files = (
 				3F712D922613090200D7360A /* ViewController.m in Sources */,
 				3F712E1C2613178A00D7360A /* MMCRAAModelItems.m in Sources */,
+				3F712E4B261426A600D7360A /* MMCStarView.m in Sources */,
 				3F712DDB26130EE700D7360A /* MMCRAAViewModel.m in Sources */,
 				3F712DED2613156700D7360A /* MMCRAAModel.m in Sources */,
 				3F712D8C2613090200D7360A /* AppDelegate.m in Sources */,

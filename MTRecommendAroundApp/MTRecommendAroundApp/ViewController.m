@@ -82,9 +82,9 @@
     return UITableViewAutomaticDimension;
 }
 
-//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-//    return self.dataModel.title;
-//}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 60;
+}
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     static NSString *headerViewIdentifier = @"headerViewIdentifier";
@@ -92,7 +92,8 @@
     if (!headView) {
         headView = [[MMCTableViewHeaderView alloc] initWithReuseIdentifier:headerViewIdentifier];
     }
-    headView.title = self.dataModel.title;
+    NSString *headTitle = [NSString stringWithFormat:@"  %@",self.dataModel.title];
+    headView.title = headTitle;
     return headView;
 }
 
