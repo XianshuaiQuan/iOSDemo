@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FB17B33261DD70900AEBDAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB17B32261DD70900AEBDAC /* AppDelegate.m */; };
+		3FB17B36261DD70900AEBDAC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB17B35261DD70900AEBDAC /* SceneDelegate.m */; };
+		3FB17B39261DD70900AEBDAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB17B38261DD70900AEBDAC /* ViewController.m */; };
+		3FB17B3C261DD70900AEBDAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB17B3A261DD70900AEBDAC /* Main.storyboard */; };
+		3FB17B3E261DD70E00AEBDAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB17B3D261DD70E00AEBDAC /* Assets.xcassets */; };
+		3FB17B41261DD70E00AEBDAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB17B3F261DD70E00AEBDAC /* LaunchScreen.storyboard */; };
+		3FB17B44261DD70E00AEBDAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB17B43261DD70E00AEBDAC /* main.m */; };
+		3FB17B4E261DD70E00AEBDAC /* MTNSNotificationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB17B4D261DD70E00AEBDAC /* MTNSNotificationDemoTests.m */; };
+		3FB17B59261DD70E00AEBDAC /* MTNSNotificationDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB17B58261DD70E00AEBDAC /* MTNSNotificationDemoUITests.m */; };
+		A9C683269382DB88DFC407C7 /* libPods-MTNSNotificationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B73A4E5D257AF217383F02 /* libPods-MTNSNotificationDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FB17B4A261DD70E00AEBDAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FB17B26261DD70900AEBDAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FB17B2D261DD70900AEBDAC;
+			remoteInfo = MTNSNotificationDemo;
+		};
+		3FB17B55261DD70E00AEBDAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FB17B26261DD70900AEBDAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FB17B2D261DD70900AEBDAC;
+			remoteInfo = MTNSNotificationDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C2D49301807F1C4CCCAB255 /* Pods-MTNSNotificationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTNSNotificationDemo.release.xcconfig"; path = "Target Support Files/Pods-MTNSNotificationDemo/Pods-MTNSNotificationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3FB17B2E261DD70900AEBDAC /* MTNSNotificationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTNSNotificationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB17B31261DD70900AEBDAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3FB17B32261DD70900AEBDAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3FB17B34261DD70900AEBDAC /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		3FB17B35261DD70900AEBDAC /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		3FB17B37261DD70900AEBDAC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3FB17B38261DD70900AEBDAC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3FB17B3B261DD70900AEBDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FB17B3D261DD70E00AEBDAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FB17B40261DD70E00AEBDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FB17B42261DD70E00AEBDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FB17B43261DD70E00AEBDAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FB17B49261DD70E00AEBDAC /* MTNSNotificationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTNSNotificationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB17B4D261DD70E00AEBDAC /* MTNSNotificationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTNSNotificationDemoTests.m; sourceTree = "<group>"; };
+		3FB17B4F261DD70E00AEBDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FB17B54261DD70E00AEBDAC /* MTNSNotificationDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTNSNotificationDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB17B58261DD70E00AEBDAC /* MTNSNotificationDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTNSNotificationDemoUITests.m; sourceTree = "<group>"; };
+		3FB17B5A261DD70E00AEBDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52B73A4E5D257AF217383F02 /* libPods-MTNSNotificationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MTNSNotificationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4507F2765CBEF95468FA509 /* Pods-MTNSNotificationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTNSNotificationDemo.debug.xcconfig"; path = "Target Support Files/Pods-MTNSNotificationDemo/Pods-MTNSNotificationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FB17B2B261DD70900AEBDAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C683269382DB88DFC407C7 /* libPods-MTNSNotificationDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB17B46261DD70E00AEBDAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB17B51261DD70E00AEBDAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FB17B25261DD70900AEBDAC = {
+			isa = PBXGroup;
+			children = (
+				3FB17B30261DD70900AEBDAC /* MTNSNotificationDemo */,
+				3FB17B4C261DD70E00AEBDAC /* MTNSNotificationDemoTests */,
+				3FB17B57261DD70E00AEBDAC /* MTNSNotificationDemoUITests */,
+				3FB17B2F261DD70900AEBDAC /* Products */,
+				B479E6B65BBFE83D00018B62 /* Pods */,
+				D4482F8FDF6E76A55D90FD12 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3FB17B2F261DD70900AEBDAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FB17B2E261DD70900AEBDAC /* MTNSNotificationDemo.app */,
+				3FB17B49261DD70E00AEBDAC /* MTNSNotificationDemoTests.xctest */,
+				3FB17B54261DD70E00AEBDAC /* MTNSNotificationDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FB17B30261DD70900AEBDAC /* MTNSNotificationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3FB17B37261DD70900AEBDAC /* ViewController.h */,
+				3FB17B38261DD70900AEBDAC /* ViewController.m */,
+				3FB17B6A261DD75200AEBDAC /* AppLifeTime */,
+				3FB17B69261DD74200AEBDAC /* Others */,
+			);
+			path = MTNSNotificationDemo;
+			sourceTree = "<group>";
+		};
+		3FB17B4C261DD70E00AEBDAC /* MTNSNotificationDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FB17B4D261DD70E00AEBDAC /* MTNSNotificationDemoTests.m */,
+				3FB17B4F261DD70E00AEBDAC /* Info.plist */,
+			);
+			path = MTNSNotificationDemoTests;
+			sourceTree = "<group>";
+		};
+		3FB17B57261DD70E00AEBDAC /* MTNSNotificationDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FB17B58261DD70E00AEBDAC /* MTNSNotificationDemoUITests.m */,
+				3FB17B5A261DD70E00AEBDAC /* Info.plist */,
+			);
+			path = MTNSNotificationDemoUITests;
+			sourceTree = "<group>";
+		};
+		3FB17B69261DD74200AEBDAC /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				3FB17B3A261DD70900AEBDAC /* Main.storyboard */,
+				3FB17B3D261DD70E00AEBDAC /* Assets.xcassets */,
+				3FB17B3F261DD70E00AEBDAC /* LaunchScreen.storyboard */,
+				3FB17B42261DD70E00AEBDAC /* Info.plist */,
+				3FB17B43261DD70E00AEBDAC /* main.m */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		3FB17B6A261DD75200AEBDAC /* AppLifeTime */ = {
+			isa = PBXGroup;
+			children = (
+				3FB17B31261DD70900AEBDAC /* AppDelegate.h */,
+				3FB17B32261DD70900AEBDAC /* AppDelegate.m */,
+				3FB17B34261DD70900AEBDAC /* SceneDelegate.h */,
+				3FB17B35261DD70900AEBDAC /* SceneDelegate.m */,
+			);
+			name = AppLifeTime;
+			sourceTree = "<group>";
+		};
+		B479E6B65BBFE83D00018B62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4507F2765CBEF95468FA509 /* Pods-MTNSNotificationDemo.debug.xcconfig */,
+				1C2D49301807F1C4CCCAB255 /* Pods-MTNSNotificationDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D4482F8FDF6E76A55D90FD12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52B73A4E5D257AF217383F02 /* libPods-MTNSNotificationDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FB17B2D261DD70900AEBDAC /* MTNSNotificationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FB17B5D261DD70E00AEBDAC /* Build configuration list for PBXNativeTarget "MTNSNotificationDemo" */;
+			buildPhases = (
+				478FDC30C77092157F2BAC3E /* [CP] Check Pods Manifest.lock */,
+				3FB17B2A261DD70900AEBDAC /* Sources */,
+				3FB17B2B261DD70900AEBDAC /* Frameworks */,
+				3FB17B2C261DD70900AEBDAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTNSNotificationDemo;
+			productName = MTNSNotificationDemo;
+			productReference = 3FB17B2E261DD70900AEBDAC /* MTNSNotificationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FB17B48261DD70E00AEBDAC /* MTNSNotificationDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FB17B60261DD70E00AEBDAC /* Build configuration list for PBXNativeTarget "MTNSNotificationDemoTests" */;
+			buildPhases = (
+				3FB17B45261DD70E00AEBDAC /* Sources */,
+				3FB17B46261DD70E00AEBDAC /* Frameworks */,
+				3FB17B47261DD70E00AEBDAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FB17B4B261DD70E00AEBDAC /* PBXTargetDependency */,
+			);
+			name = MTNSNotificationDemoTests;
+			productName = MTNSNotificationDemoTests;
+			productReference = 3FB17B49261DD70E00AEBDAC /* MTNSNotificationDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FB17B53261DD70E00AEBDAC /* MTNSNotificationDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FB17B63261DD70E00AEBDAC /* Build configuration list for PBXNativeTarget "MTNSNotificationDemoUITests" */;
+			buildPhases = (
+				3FB17B50261DD70E00AEBDAC /* Sources */,
+				3FB17B51261DD70E00AEBDAC /* Frameworks */,
+				3FB17B52261DD70E00AEBDAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FB17B56261DD70E00AEBDAC /* PBXTargetDependency */,
+			);
+			name = MTNSNotificationDemoUITests;
+			productName = MTNSNotificationDemoUITests;
+			productReference = 3FB17B54261DD70E00AEBDAC /* MTNSNotificationDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FB17B26261DD70900AEBDAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					3FB17B2D261DD70900AEBDAC = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3FB17B48261DD70E00AEBDAC = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3FB17B2D261DD70900AEBDAC;
+					};
+					3FB17B53261DD70E00AEBDAC = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3FB17B2D261DD70900AEBDAC;
+					};
+				};
+			};
+			buildConfigurationList = 3FB17B29261DD70900AEBDAC /* Build configuration list for PBXProject "MTNSNotificationDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FB17B25261DD70900AEBDAC;
+			productRefGroup = 3FB17B2F261DD70900AEBDAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FB17B2D261DD70900AEBDAC /* MTNSNotificationDemo */,
+				3FB17B48261DD70E00AEBDAC /* MTNSNotificationDemoTests */,
+				3FB17B53261DD70E00AEBDAC /* MTNSNotificationDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FB17B2C261DD70900AEBDAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB17B41261DD70E00AEBDAC /* LaunchScreen.storyboard in Resources */,
+				3FB17B3E261DD70E00AEBDAC /* Assets.xcassets in Resources */,
+				3FB17B3C261DD70900AEBDAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB17B47261DD70E00AEBDAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB17B52261DD70E00AEBDAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		478FDC30C77092157F2BAC3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MTNSNotificationDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FB17B2A261DD70900AEBDAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB17B39261DD70900AEBDAC /* ViewController.m in Sources */,
+				3FB17B33261DD70900AEBDAC /* AppDelegate.m in Sources */,
+				3FB17B44261DD70E00AEBDAC /* main.m in Sources */,
+				3FB17B36261DD70900AEBDAC /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB17B45261DD70E00AEBDAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB17B4E261DD70E00AEBDAC /* MTNSNotificationDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB17B50261DD70E00AEBDAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB17B59261DD70E00AEBDAC /* MTNSNotificationDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FB17B4B261DD70E00AEBDAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FB17B2D261DD70900AEBDAC /* MTNSNotificationDemo */;
+			targetProxy = 3FB17B4A261DD70E00AEBDAC /* PBXContainerItemProxy */;
+		};
+		3FB17B56261DD70E00AEBDAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FB17B2D261DD70900AEBDAC /* MTNSNotificationDemo */;
+			targetProxy = 3FB17B55261DD70E00AEBDAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FB17B3A261DD70900AEBDAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FB17B3B261DD70900AEBDAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FB17B3F261DD70E00AEBDAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FB17B40261DD70E00AEBDAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FB17B5B261DD70E00AEBDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3FB17B5C261DD70E00AEBDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FB17B5E261DD70E00AEBDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4507F2765CBEF95468FA509 /* Pods-MTNSNotificationDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MTNSNotificationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qxs.MTNSNotificationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FB17B5F261DD70E00AEBDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C2D49301807F1C4CCCAB255 /* Pods-MTNSNotificationDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MTNSNotificationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qxs.MTNSNotificationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3FB17B61261DD70E00AEBDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MTNSNotificationDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qxs.MTNSNotificationDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTNSNotificationDemo.app/MTNSNotificationDemo";
+			};
+			name = Debug;
+		};
+		3FB17B62261DD70E00AEBDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MTNSNotificationDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qxs.MTNSNotificationDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTNSNotificationDemo.app/MTNSNotificationDemo";
+			};
+			name = Release;
+		};
+		3FB17B64261DD70E00AEBDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MTNSNotificationDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qxs.MTNSNotificationDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MTNSNotificationDemo;
+			};
+			name = Debug;
+		};
+		3FB17B65261DD70E00AEBDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MTNSNotificationDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qxs.MTNSNotificationDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MTNSNotificationDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FB17B29261DD70900AEBDAC /* Build configuration list for PBXProject "MTNSNotificationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FB17B5B261DD70E00AEBDAC /* Debug */,
+				3FB17B5C261DD70E00AEBDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FB17B5D261DD70E00AEBDAC /* Build configuration list for PBXNativeTarget "MTNSNotificationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FB17B5E261DD70E00AEBDAC /* Debug */,
+				3FB17B5F261DD70E00AEBDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FB17B60261DD70E00AEBDAC /* Build configuration list for PBXNativeTarget "MTNSNotificationDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FB17B61261DD70E00AEBDAC /* Debug */,
+				3FB17B62261DD70E00AEBDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FB17B63261DD70E00AEBDAC /* Build configuration list for PBXNativeTarget "MTNSNotificationDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FB17B64261DD70E00AEBDAC /* Debug */,
+				3FB17B65261DD70E00AEBDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FB17B26261DD70900AEBDAC /* Project object */;
+}
